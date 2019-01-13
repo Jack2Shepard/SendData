@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/info_tv"
+        android:layout_marginTop="15dp"
+        android:text="@string/info_tv_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="@string/name_ed_hint"
+        android:layout_below="@+id/info_tv"
+        android:layout_margin="10dp"
+        android:id="@+id/fname_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_below="@+id/fname_ed"
+        android:hint="@string/lname_ed_hint"
+        android:layout_margin="10dp"
+        android:id="@+id/lname_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="@string/age_ed_txt"
+        android:id="@+id/age_ed"
+        android:layout_below="@+id/lname_ed"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_margin="10dp"
+        android:id="@+id/sex_rg"
+        android:layout_below="@+id/age_ed"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="@string/male_rb_txt"
+            android:checked="true"
+            android:id="@+id/male_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="@string/female_rb_txt"
+            android:id="@+id/female_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textSize="22sp"
+        android:id="@+id/send_btn"
+        android:layout_below="@+id/sex_rg"
+        android:text="@string/send_btn_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:layout_margin="10dp"
+        android:layout_below="@+id/send_btn"
+        android:id="@+id/frag_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+</RelativeLayout>

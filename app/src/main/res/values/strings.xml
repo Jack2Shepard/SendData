@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SendData</string>
+    <string name="info_tv_txt">مشخصات خود را وارد کنید :</string>
+    <string name="name_ed_hint">نام</string>
+    <string name="lname_ed_hint">نام خانوادگی</string>
+    <string name="age_ed_txt">سن</string>
+    <string name="male_rb_txt">مرد</string>
+    <string name="female_rb_txt">زن</string>
+    <string name="send_btn_txt">ارسال</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
